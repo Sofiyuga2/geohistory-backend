@@ -1,0 +1,127 @@
+body {
+  font-family: Verdana;
+  min-height: 100vh;
+  background: url("../images/background.jpg"); }
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  padding: 50px 10%; }
+  .content-wrapper .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2); }
+    .content-wrapper .cards-wrapper .top {
+      width: 100%;
+      border-bottom: 2px solid #f2994a;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .content-wrapper .cards-wrapper .top .search-bar-wrapper input {
+        outline: none;
+        padding: 8px 16px;
+        font-size: 16px;
+        border-radius: 15px;
+        margin-right: 25px;
+        transition: all .3s ease; }
+        .content-wrapper .cards-wrapper .top .search-bar-wrapper input:focus {
+          border-color: #f2994a; }
+      .content-wrapper .cards-wrapper .top .search-bar-wrapper button {
+        padding: 8px 16px;
+        border-radius: 15px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background: #f2994a;
+        color: #fff;
+        transition: all .3s ease; }
+        .content-wrapper .cards-wrapper .top .search-bar-wrapper button:hover {
+          transform: scale(1.1); }
+    .content-wrapper .cards-wrapper .bottom {
+      width: 100%;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 0.2fr));
+      grid-column-gap: 25px;
+      grid-row-gap: 25px;
+      justify-content: center; }
+      .content-wrapper .cards-wrapper .bottom .card {
+        background: #f2c94c;
+        border-radius: 15px;
+        cursor: pointer;
+        overflow: hidden;
+        color: #fff;
+        box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2);
+        transition: all .3s ease;
+        display: flex;
+        flex-direction: column; }
+        .content-wrapper .cards-wrapper .bottom .card:hover {
+          transform: scale(1.05); }
+        .content-wrapper .cards-wrapper .bottom .card .preview {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 10px; }
+          .content-wrapper .cards-wrapper .bottom .card .preview img {
+            width: 80%;
+            height: 200px; }
+        .content-wrapper .cards-wrapper .bottom .card .card-content {
+          width: 100%;
+          padding: 10px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          .content-wrapper .cards-wrapper .bottom .card .card-content .content-top {
+            width: 100%;
+            margin-bottom: 25px; }
+          .content-wrapper .cards-wrapper .bottom .card .card-content .content-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-between; }
+            .content-wrapper .cards-wrapper .bottom .card .card-content .content-bottom a {
+              padding: 8px 16px;
+              background: #fff;
+              border-radius: 8px;
+              text-decoration: none;
+              color: #000;
+              transition: all .3s ease; }
+              .content-wrapper .cards-wrapper .bottom .card .card-content .content-bottom a:hover {
+                transform: scale(1.1); }
+  .content-wrapper .page-details-wrapper {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2); }
+    .content-wrapper .page-details-wrapper .return-link {
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #000000;
+      transition: all .3s ease; }
+      .content-wrapper .page-details-wrapper .return-link:hover {
+        color: #f2994a; }
+    .content-wrapper .page-details-wrapper .left {
+      margin-right: 25px; }
+      .content-wrapper .page-details-wrapper .left img {
+        width: 300px;
+        height: 250px;
+        border-radius: 15px; }
+    .content-wrapper .page-details-wrapper .right {
+      width: calc(100% - 650px); }
+      .content-wrapper .page-details-wrapper .right .info-container {
+        display: flex;
+        flex-direction: column; }
+        .content-wrapper .page-details-wrapper .right .info-container .name {
+          font-size: 24px; }
+
+/*# sourceMappingURL=main.css.map */

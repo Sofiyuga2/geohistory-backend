@@ -1,0 +1,161 @@
+@import "utils/variables.sass"
+
+body
+	font-family: Verdana
+	min-height: 100vh
+	background: $background
+
+
+.content-wrapper
+	width: 100%
+	display: flex
+	padding: 50px 10%
+
+	.cards-wrapper
+		display: flex
+		flex-direction: column
+		width: 100%
+		background: #fff
+		border-radius: 15px
+		box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2)
+
+		.top
+			width: 100%
+			border-bottom: 2px solid $primary
+			padding: 20px
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			.search-bar-wrapper
+
+				input
+					outline: none
+					padding: 8px 16px
+					font-size: 16px
+					border-radius: 15px
+					margin-right: 25px
+					transition: all .3s ease
+
+					&:focus
+						border-color: $primary
+
+				button
+					padding: 8px 16px
+					border-radius: 15px
+					outline: none
+					border: none
+					cursor: pointer
+					background: $primary
+					color: #fff
+					transition: all .3s ease
+
+					&:hover
+						transform: scale(1.1)
+
+		.bottom
+			width: 100%
+			padding: 20px
+			display: grid
+			grid-template-columns: repeat(auto-fit, minmax(250px, 0.20fr))
+			grid-column-gap: 25px
+			grid-row-gap: 25px
+			justify-content: center
+
+			.card
+				background: $secondary
+				border-radius: 15px
+				cursor: pointer
+				overflow: hidden
+				color: #fff
+				box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2)
+				transition: all .3s ease
+				display: flex
+				flex-direction: column
+
+				&:hover
+					transform: scale(1.05)
+
+				.preview
+					width: 100%
+					display: flex
+					justify-content: center
+					margin-bottom: 10px
+
+					img
+						width: 80%
+						height: 200px
+
+				.card-content
+					width: 100%
+					padding: 10px
+					height: 100%
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+
+					.content-top
+						width: 100%
+						margin-bottom: 25px
+
+					.content-bottom
+						width: 100%
+						display: flex
+						justify-content: space-between
+
+						a
+							padding: 8px 16px
+							background: #fff
+							border-radius: 8px
+							text-decoration: none
+							color: #000
+							transition: all .3s ease
+
+							&:hover
+								transform: scale(1.1)
+
+	.page-details-wrapper
+		display: flex
+		width: 100%
+		background: #fff
+		border-radius: 15px
+		padding: 20px
+		position: relative
+		box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2)
+
+		.return-link
+			position: absolute
+			right: 30px
+			bottom: 20px
+			font-size: 18px
+			text-decoration: none
+			color: #000000
+			transition: all .3s ease
+
+			&:hover
+				color: $primary
+
+		.left
+			margin-right: 25px
+
+			img
+				width: 300px
+				height: 250px
+				border-radius: 15px
+
+		.right
+			width: calc(100% - 650px)
+
+			.info-container
+				display: flex
+				flex-direction: column
+
+				.name
+					font-size: 24px
+
+
+
+
+
+
+

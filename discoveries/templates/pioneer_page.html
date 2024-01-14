@@ -1,0 +1,42 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block title %}
+    Панель администратора
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="content-wrapper">
+
+        <div class="page-details-wrapper">
+
+            <a class="return-link" href="/">Назад</a>
+
+            <div class="left">
+
+                <img src="../media/{{ pioneer.image }}">
+
+            </div>
+
+            <div class="right">
+
+                <div class="info-container">
+
+                    <h2 class="name">{{ pioneer.name }}</h2>
+
+                    <br>
+
+                    <span class="description">{{ pioneer.description }}</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

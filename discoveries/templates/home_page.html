@@ -1,0 +1,76 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block title %}
+    Панель администратора
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="content-wrapper">
+
+            <div class="cards-wrapper">
+
+                <div class="top">
+
+                    <h2>Первооткрыватели</h2>
+
+                    <form class="search-bar-wrapper" method="GET" action="/">
+
+                        {% csrf_token %}
+
+                        <input type="text" placeholder="Поиск" autocomplete="off" name="query" value="{{ search_query }}">
+
+                        <button type="submit">
+                            Поиск
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <div class="bottom">
+
+                    {% for pioneer in pioneers %}
+
+                        <div class="card">
+
+                            <div class="preview">
+                                <img src="media/{{ pioneer.image }}">
+                            </div>
+
+                            <div class="card-content">
+
+                                <div class="content-top">
+
+                                    <h3 class="title">{{ pioneer.name }}</h3>
+
+                                </div>
+
+                                <div class="content-bottom">
+
+                                     <a href="{{ pioneer.get_absolute_url }}">
+                                        <span>Подробнее</span>
+                                    </a>
+
+                                    <a href="{{ pioneer.get_delete_url }}">
+                                        <span>Удалить</span>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+{% endblock %}

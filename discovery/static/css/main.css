@@ -1,0 +1,79 @@
+body {
+    background: url("../images/background.jpg");
+    overflow: hidden;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 25px;
+}
+
+.search-container input {
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.search-container button {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.discoverers-container {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+}
+
+.discoverer-card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.discoverer-card img {
+    width: 100%;
+}
+
+.discoverer-card span {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.discoverer-card button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container img {
+    width: 200px;
+}
+
+.container h1 {
+    font-size: 32px;
+}
+
+.container button {
+    margin-top: 50px;
+    padding: 10px 25px;
+    font-size: 24px;
+    cursor: pointer;
+}

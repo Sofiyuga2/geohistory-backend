@@ -1,0 +1,28 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+	<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+
+    <div class="container">
+
+       <img src="{% static "images/discoverers/" %}{{ discoverer.id }}.jpg" />
+
+       <h1>{{ discoverer.name }}</h1>
+
+        <span>{{ discoverer.description }}</span>
+
+       <a href="/">
+            <button>Назад</button>
+       </a>
+
+    </div>
+
+</body>
+</html>

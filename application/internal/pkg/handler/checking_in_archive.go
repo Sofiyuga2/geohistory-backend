@@ -44,7 +44,7 @@ func sendCheckingArchiveRequest(request models.Request) {
 
 	jsonAnswer, _ := json.Marshal(answer)
 	bodyReader := bytes.NewReader(jsonAnswer)
-
+//url для Python сервиса
 	requestURL := fmt.Sprintf("http://127.0.0.1:8000/api/discoveries/%d/checking_in_archive/", request.DiscoveriesId)
 
 	req, _ := http.NewRequest(http.MethodPut, requestURL, bodyReader)

@@ -16,7 +16,7 @@ func (h *Handler) InitRoutes() *gin.Engine {
 	router := gin.New()
 
 	router.Use(cors.Default())
-
+// метод асинхронного сервиса
 	router.POST("/calc_checking_in_archive/", h.issueCheckArchive)
 
 	return router
